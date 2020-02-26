@@ -1,0 +1,58 @@
+// when width <= 768px
+@media (max-width: 768px) {
+  .hide-sm {
+    display: none;
+  }
+
+  // nav-bar
+  .navbar {
+    flex-direction: column;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .dash-buttons > a {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+
+  // profiles
+  .profile {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    ul {
+      display: none;
+    }
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-areas: "top" "about" "exp" "edu " "github";
+    .profile-about {
+      .skills {
+        flex-direction: column; 
+      }
+    }
+  }
+
+  .posts {
+    .post {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a, button {
+      padding: 0.4rem 0.5rem;
+    }
+  }
+}
